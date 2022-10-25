@@ -17,7 +17,5 @@
   "tabWidth": 2,
   "trailingComma": "es5",
   "useTabs": false,
-  "vueIndentScriptAndStyle": false,
-  "filepath": "c:\\Users\\admin\\Documents\\CODE\\Backend\\blog\\.prettierrc",
-  "parser": "yaml"
+  "vueIndentScriptAndStyle": false
 }
