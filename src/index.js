@@ -6,6 +6,10 @@ const app = express();
 const port = 3000;
 
 const route = require('./routes');
+const db = require('./configs/db');
+
+// Connect to DB
+db.connect();
 
 app.use(express.static(path.join(__dirname, '/public')));
 
@@ -29,7 +33,7 @@ app.set(
 
   'hbs'
 );
-app.set('views', path.join(__dirname, '/resources/views'));
+app.set('views', path.join(__dirname, 'resources', 'views'));
 
 // Routes init
 route(app);
